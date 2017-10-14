@@ -30,7 +30,6 @@ class CategoryAdapter(context: Context, categories: List<Category> ) : BaseAdapt
         val resourceID = context.resources.getIdentifier(category.image, "drawable", context.packageName)
         categoryImage.setImageResource(resourceID)
         println(resourceID)
-
         categoryName.text = category.title
         return categoryView
     }

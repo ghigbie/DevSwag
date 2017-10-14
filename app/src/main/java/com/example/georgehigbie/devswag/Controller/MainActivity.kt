@@ -2,9 +2,7 @@ package com.example.georgehigbie.devswag.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import com.example.georgehigbie.devswag.Adapters.CategoryAdapter
-import com.example.georgehigbie.devswag.Model.Category
 import com.example.georgehigbie.devswag.R
 import com.example.georgehigbie.devswag.Services.DataService
 import kotlinx.android.synthetic.main.activity_main.*
