@@ -30,7 +30,6 @@
         android:textColor="@color/swagTextColor"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:divider="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
