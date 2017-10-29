@@ -6,6 +6,6 @@ package com.example.georgehigbie.devswag.Model
 
 class Category(val title: String, val image: String){
     override fun toString(): String {
-        return title
+        return title  //this will allow the title to be displayed
     }
 }
