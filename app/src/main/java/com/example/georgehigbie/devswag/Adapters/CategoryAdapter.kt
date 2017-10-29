@@ -44,4 +44,9 @@ class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapte
     override fun getCount(): Int {
         return categories.count()
     }
+
+    private class ViewHolder{
+        var categoryImage: ImageView? = null
+        var categoryName: TextView? = null
+    }
 }
