@@ -1,5 +1,6 @@
 package com.example.georgehigbie.devswag.Controller
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         adapter = CategoryRecycleAdapter(this, DataService.categories) { category ->
             println(category.title)
+            val productsIntent = Intent(this, ProductsActivity :: class.java)
+            productsIntent.putExtra("productCategory", category.title)
+            startActivity(productsIntent)
         }
         categoriesList.adapter = adapter
 
