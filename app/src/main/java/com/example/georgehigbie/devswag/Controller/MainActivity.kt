@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val layoutManager = LinearLayoutManager(this)
         categoriesList.layoutManager = layoutManager
-        categoriesList.setHasFixedSize(true)
+        categoriesList.setHasFixedSize(true) //this is small optimization for cells that are of a set sized
     }
 
 }

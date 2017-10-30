@@ -12,6 +12,22 @@ object DataService {
             Category("SHIRTS", "shirtimage"),
             Category("HOODIES","hoodieimage"),
             Category("HAT", "hatimage"),
+            Category("DIGITAL", "digitalgoodsimage"),
+            Category("SHIRTS", "shirtimage"),
+            Category("HOODIES","hoodieimage"),
+            Category("HAT", "hatimage"),
+            Category("DIGITAL", "digitalgoodsimage"),
+            Category("SHIRTS", "shirtimage"),
+            Category("HOODIES","hoodieimage"),
+            Category("HAT", "hatimage"),
+            Category("DIGITAL", "digitalgoodsimage"),
+            Category("SHIRTS", "shirtimage"),
+            Category("HOODIES","hoodieimage"),
+            Category("HAT", "hatimage"),
+            Category("DIGITAL", "digitalgoodsimage"),
+            Category("SHIRTS", "shirtimage"),
+            Category("HOODIES","hoodieimage"),
+            Category("HAT", "hatimage"),
             Category("DIGITAL", "digitalgoodsimage")
     )
 
@@ -36,5 +52,7 @@ object DataService {
             Product("Devslopes Hustle", "$18", "shirt04"),
             Product("Kick Flip Studios", "$19", "shirt05")
     )
+
+
 
 }
