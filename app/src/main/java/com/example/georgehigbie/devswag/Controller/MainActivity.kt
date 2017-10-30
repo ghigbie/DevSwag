@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import com.example.georgehigbie.devswag.Adapters.CategoryRecycleAdapter
 import com.example.georgehigbie.devswag.R
 import com.example.georgehigbie.devswag.Services.DataService
+import com.example.georgehigbie.devswag.Utilities.EXTRA_CATEGORY
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         adapter = CategoryRecycleAdapter(this, DataService.categories) { category ->
             println(category.title)
             val productsIntent = Intent(this, ProductsActivity :: class.java)
-            productsIntent.putExtra("EXTRA_CATEGORY", category.title)
+            productsIntent.putExtra(EXTRA_CATEGORY, category.title)
             startActivity(productsIntent)
         }
         categoriesList.adapter = adapter
