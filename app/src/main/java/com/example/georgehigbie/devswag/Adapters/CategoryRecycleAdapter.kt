@@ -9,21 +9,21 @@ import com.example.georgehigbie.devswag.Model.Category
 /**
  * Created by georgehigbie on 10/29/17.
  */
-class CategoryRecycleAdapter(val context: Context, val categories: List<Category>) : RecyclerView.Adapter<CategoryRecycleAdapter.holder>(){
+class CategoryRecycleAdapter(val context: Context, val categories: List<Category>) : RecyclerView.Adapter<CategoryRecycleAdapter.Holder>(){
 
-    override fun onBindViewHolder(holder: holder?, position: Int) {
+    override fun onBindViewHolder(holder: Holder?, position: Int) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun getItemCount(): Int {
+        return categories.count()
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): Holder {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): holder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    inner class holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    inner class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
 
     }
 }
