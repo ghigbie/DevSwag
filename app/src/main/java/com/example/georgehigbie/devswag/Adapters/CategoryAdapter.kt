@@ -14,9 +14,7 @@ import com.example.georgehigbie.devswag.R
  * Created by georgehigbie on 10/13/17.
  */
 
-class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val categoryView: View
