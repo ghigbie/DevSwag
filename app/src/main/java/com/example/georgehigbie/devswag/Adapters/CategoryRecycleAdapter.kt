@@ -2,6 +2,7 @@ package com.example.georgehigbie.devswag.Adapters
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -15,7 +16,7 @@ import com.example.georgehigbie.devswag.R
 class CategoryRecycleAdapter(val context: Context, val categories: List<Category>) : RecyclerView.Adapter<CategoryRecycleAdapter.Holder>(){
 
     override fun onBindViewHolder(holder: Holder?, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        holder?.bindCategory(categories[position], context)
     }
 
     override fun getItemCount(): Int {
@@ -23,7 +24,9 @@ class CategoryRecycleAdapter(val context: Context, val categories: List<Category
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): Holder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val view  = LayoutInflater.from(context)
+                .inflate(R.layout.category_list_item, parent, false)
+        return Holder(view)
     }
 
     inner class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
