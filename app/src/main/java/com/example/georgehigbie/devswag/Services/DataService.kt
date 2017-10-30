@@ -56,11 +56,11 @@ object DataService {
     val digitalGoods = listOf<Product>()
 
     fun getProducts(category: String) : List<Product>{
-        when(category){
-            "SHIRTS" -> return shirts
-            "HATS" -> return hats
-            "HOODIES" -> return hoodies
-            else -> return digitalGoods
+        return when(category){
+            "SHIRTS" -> shirts
+            "HATS" -> hats
+            "HOODIES" -> hoodies
+            else -> digitalGoods
         }
     }
 
