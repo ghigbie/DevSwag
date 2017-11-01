@@ -1,5 +1,6 @@
 package com.example.georgehigbie.devswag.Controller
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
@@ -20,7 +21,13 @@ class ProductsActivity : AppCompatActivity() {
         val categoryType = intent.getStringExtra(EXTRA_CATEGORY)
         adapter = ProductsAdapter(this, DataService.getProducts(categoryType))
 
-        val layoutManager = GridLayoutManager(this, 2)
+        var spanCount = 2
+        val orientation = resources.configuration.orientation
+        if(orientation == Configuration.ORIENTATION_LANDSCAPE){
+            spanCount = 3
+        }
+
+        val layoutManager = GridLayoutManager(this, spanCount)
         productsList.layoutManager = layoutManager
         productsList.adapter = adapter
     }
